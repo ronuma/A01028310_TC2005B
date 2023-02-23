@@ -1,0 +1,79 @@
+#mainTitle {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 0px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.border {
+  border: solid;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#left {
+  border-left: dashed blueviolet;
+}
+#right {
+  border-right: double #32a1ce;
+}
+#top {
+  border-top: dashed red;
+}
+
+.hotdog {
+  border-left: solid darkorange;
+  border-right: solid darkorange;
+}
+.sandwich {
+  border-top: double darkorange;
+  border-bottom: double darkorange;
+}
+
+.roundedElement {
+  border: solid;
+  border-radius: 30px;
+}
+
+.dynamicBorders {
+  border: solid green;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 100% 50%;
+}
+
+#background-img {
+  background-image: url("../images/cream.jpg");
+}
+
+#greenText {
+  color: green;
+}
+
+#purpleText {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+#fontFamily {
+  font: serif;
+}
+#fontStyle {
+  font: italic;
+}
+#fontSize {
+}
+#boldText {
+}
