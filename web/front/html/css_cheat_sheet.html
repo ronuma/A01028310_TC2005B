@@ -68,7 +68,6 @@
       </p>
       <p class="dynamicBorders">Mira nomás</p>
       <hr />
-
       <div id="background-img">
         <h3>background-image</h3>
         <p>Permite insertar imágenes de fondo en un elemento, como en este.</p>
@@ -87,28 +86,81 @@
         tipografía, como la <span id="fontFamily">familia</span>, el
         <span id="fontStyle">estilo</span>, el
         <span id="fontSize">tamaño</span>, el <span id="boldText">peso</span>,
-        entre otras.
+        entre otras. Sin embargo, parece que no está funcionando ahorita, aunque
+        lo estoy usando tal cual aparece en la documentación.
       </p>
       <hr />
       <h3>font-family</h3>
+      <p>
+        Permite específicamente establecer la familia de fuente, o sea, la
+        <span class="fontFamily">tipografía.</span>
+      </p>
       <hr />
       <h3>font-style, font-weight</h3>
+      <p>
+        Style sirve para el estilo de la fuente, o sea
+        <span class="fontStyle">cursiva</span> por ejemplo, y font weight para
+        el peso, o sea, qué tan <span class="fontWeight">"gorda"</span> es.
+      </p>
       <hr />
       <h3>width, height</h3>
+      <p>
+        Esto es para determinar qué tan ancho o alto es un elemento, como estos
+        divs:
+      </p>
+      <div class="longDiv">Long Div</div>
+      <div class="wideDiv">Wide Div</div>
       <hr />
       <h3>list-style</h3>
+      <p>
+        Según la documentación de MDN Web Docs, esta propiedad permite definir
+        varias propiedades a la vez, sobre una lista, que son:
+        <ul>
+          Lista
+          <li id="listType">
+          list-style-type: definir qué tipo de bullet se utiliza, como este
+          cuadrado
+        </li>
+        <li id="listImage">
+          list-style-image: puedo agregar una imagen al elemento de la lista, al
+          mismo tiempo que altero también el tipo del bullet
+        </li>
+        <li id="listPosition">list-style-position: permite alterar la posicion en la que se encuentra la lista respecto a su padre.</li>
+        </ul>
+      </p>
       <hr />
       <h3>margin</h3>
+      <p>Permite establecer el margen del elemento, de forma estática y dinámica, para sus cuatro lados, en lugar de tener que usar individualmente margin-bottom, margin-top, etc, que son los que se usan para cada lado específico.</p>
+      <div class="margin">
+        Márgenes para cada lado.
+      </div>
       <hr />
       <h3>padding</h3>
+      <p>Este es parecido a margin, solo que este tiene que ver con el espacio que hay entre el contenedor y su hijo, por ejemplo, veamos el div de ejemplo de margen pero ahora con padding en lugar de margen.</p>
+      <div class="padding">
+        Y vemos como ahora el contenido es lo que tiene espacio alrededor, no el elemento como tal.
+      </div>
       <hr />
       <h3>overflow</h3>
+      <p>Permite indicar qué hacer cuando el contenido excede el espacio que debería ocupar.</p>
+      <p class="overflow">Aquí se indica que el overflow tiene que ser scrolleable, como se puede ver.</p>
       <hr />
       <h3>display</h3>
+      <p>Esta propiedad determina cómo se tienen que mostrar los elementos (bloque o en línea) y cómo se muestran sus hijos (como flexible o grid).</p>
+      <p>Aquí vemos como estos divs se muestran como un row por ser inline-block</p>
+      <div id="div1" class="inlineBlock">Div 1</div>
+      <div id="div2" class="inlineBlock">Div 2</div>
       <hr />
       <h3>position</h3>
+      <p>Esta propiedad determina cómo se posicionan los elementos, de diferentes maneras, y puede ser útil, por ejemplo, para colocar elementos por encima de otros, utilizando la posición absoluta, mientras que su padre utiliza posición relativa.</p>
+      <div id="parentDiv">Parent div (relative positioning)
+        <div id="childDiv">Chidl div (absolute positiioning)</div>
+      </div>
       <hr />
       <h3>filter</h3>
+      <p>Según la documentación, este elemento es relativamente nuevo, "tecnología experimental", y sirve para dar efectos gráficos en los elementos</p>
+      <div id="filter">Mira esta borrosidad!</div>
+      <div id="filter2">O esta sombra! (ejemplo de la documentación)</div>
     </div>
   </body>
 </html>
