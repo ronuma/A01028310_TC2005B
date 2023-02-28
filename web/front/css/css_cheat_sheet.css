@@ -169,4 +169,5 @@
 #filter2 {
   filter: drop-shadow(16px 16px 20px blue);
   background-color: #32a1ce;
+  margin-bottom: 60px;
 }
