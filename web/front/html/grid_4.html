@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Grid layout 4</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/grid_activity.css"
+    />
+  </head>
+  <body>
+    <div class="container container4">
+      <div
+        id="grid4bodyleft"
+        class="item redItem"
+      >
+        Red Item
+      </div>
+      <div
+        id="grid4headerLeft"
+        class="item lightOrangeItem"
+      >
+        Light Orange Item
+      </div>
+      <div
+        id="grid4bodyRight"
+        class="item greenItem nestedGrid"
+      >
+        <div
+          id="nestedGridHeader"
+          class="item blueItem"
+        >
+          Blue Item
+        </div>
+        <div
+          id=""
+          class="item aquaItem"
+        >
+          Aqua Item
+        </div>
+        <div
+          id=""
+          class="item lightOrangeItem"
+        >
+          Light Orange Item
+        </div>
+      </div>
+      <div
+        id="grid4headerRight"
+        class="item aquaItem"
+      >
+        Aqua Item
+      </div>
+    </div>
+  </body>
+</html>
