@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 4fr 1fr 2fr 1fr;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.text-btn {
+  margin-right: 2vw;
+  cursor: pointer;
+}
+
+.subscribe-text {
+  font-weight: bold;
+  margin-right: 2vw;
+}
+
+.text-field {
+  margin-right: 1vw;
+}
+
+.subscribe-btn {
+  background-color: #b97d2d;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.element-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#header {
+  background-color: #25404b;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+#title {
+  background-color: #b97d2d;
+  grid-row: 2;
+  flex-direction: column;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  justify-content: center;
+}
+
+#subscribe {
+  background-color: #25404b;
+  grid-row: 3;
+  justify-content: center;
+}
+
+#elements {
+  grid-row: 4;
+  gap: 2vw;
+  padding: 2vw;
+  color: #000;
+  font-size: 12px;
+}
+
+#footer {
+  background-color: #25404b;
+  grid-row: 5;
+  font-size: 12px;
+  justify-content: center;
+}
