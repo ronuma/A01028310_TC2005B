@@ -36,7 +36,13 @@ public class CreateBalls : MonoBehaviour
         Vector3 pos = new Vector3(Random.Range(-15.0f, 15.0f), 6, 0);
         // create a copy of the prefab
         GameObject obj = Instantiate(ball, pos, Quaternion.identity);
-        // Doom the object to die in 5 seconds
-        Destroy(obj, 5);
+        // // Doom the object to die in 5 seconds
+        // Destroy(obj, 5);
     }
+
+    public void StopBalls() 
+    {
+        CancelInvoke("DropBall");
+    }
+
 }

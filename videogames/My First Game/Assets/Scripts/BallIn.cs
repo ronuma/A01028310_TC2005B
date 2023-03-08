@@ -19,8 +19,10 @@ public class BallIn : MonoBehaviour
     }
 
     // Detect two elements in contact
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider col)
     {
-        scoreObj.AddPoints(1);
+        if (col.tag == "Ball") {
+            scoreObj.AddPoints(1);
+        }
     }
 }
