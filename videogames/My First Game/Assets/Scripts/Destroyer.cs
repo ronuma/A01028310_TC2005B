@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         GameObject obj = col.gameObject;
         Destroy(obj);

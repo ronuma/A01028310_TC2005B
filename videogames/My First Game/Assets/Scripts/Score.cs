@@ -19,6 +19,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        tmpObj.text = "Score: " + score;
     }
 
     public void AddPoints(int amount)
@@ -26,7 +27,6 @@ public class Score : MonoBehaviour
         score += amount;
         // Update the text displayed on the screen
         tmpObj.text = "Score: " + score;
-        // Debug.Log("New Score: " + score);
 
         if (score == maxScore) {
             Finish();
